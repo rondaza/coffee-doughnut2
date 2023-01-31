@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Menu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+    <link href="normalize.css" rel="stylesheet">
+    
+</head>
+<body>
+
+  <nav class="navbar  navbar-expand-lg bg-dark navbar-dark sticky-top">
+    <div class="container-fluid">
+      <a class="img-responsive" href="index.html"><img src="images/namelogo.png" alt="Coffee+Doughnut"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+        <ul class="navbar-nav" >
+          <li class="nav-item">
+            <a class="nav-link" onclick="openNav()" role="button">How to order</a>
+          </li> 
+               <!-- The overlay -->
+   <div id="myNav" class="overlay">
+
+      <!-- Button to close the overlay navigation -->
+   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">Close</a>
+
+     <!-- Overlay content -->
+   <div class="overlay-content">
+     <h3>Pre-Orders</h3>
+     <p>Feel free to choose a date from our dropdown menu for your desired pre-order date. Self-Pickup and Delivery options are available for pre-order.</p>
+     <h3>Delivery Orders</h3>
+     <p>Fulfilled directly online, our delivery partners are hailed on your behalf. Store opening hours and real-time stock levels apply</p>
+     <h3>Self-Pickup Orders</h3>
+     <p>Feel free to choose a date from our dropdown menu for your desired pre-order date. Self-Pickup and Delivery options are available for pre-order.</p>
+     <h3>Please Note:</h3>
+     <p>In the event an item is unavailable, it is either sold-out or the pre-order slots are full; we recommend trying another day or time for your order.</p>
+     <br>
+     <p>How would you like to order?</p>
+     <button type="button" id="pickup" class="btn btn-warning position-relative mt-0">PICKUP</button>
+     <button type="button" id="delivery" class="btn btn-secondary position-relative mt-0">DELIVERY</button>
+     </div>
+
+</div> 
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Menu</a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="#">Coffee</a></li>
+              <li><a class="dropdown-item" href="donut.html">Doughnut</a></li>
+            </ul>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html#about">About</a>
+              </li> 
+            <li class="nav-item">
+                <button type="button" class="btn btn-outline-warning position-relative" href="#">Cart <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning">
+                    0
+                    <span class="visually-hidden">added to cart</span>
+                  </span></button>
+              </li>  
+          </li>
+        </ul>
+      </div>
+  </nav>
+</div>
+<section style="background-color: #eee; height: 100vh;">
+  <div class="container py-5">
+    <h4 class="text-center mb-5"><p>Good Ideas Start With Coffee</p></h4>
+
+    <div class="row">
+      <div class="col-lg-2 col-md-2 mb-2">
+        <div class="bg-image hover-zoom ripple shadow-1-strong rounded">
+          <img src="images/c1.jpg" alt="Latte"
+            class="w-100 rounded-top" />
+          <a href="#!">
+            <div class="mask rounded-bottom" style="background-color: rgba(0, 0, 0, 0.3);">
+              <div class="d-flex justify-content-start align-items-start h-100">
+                <h5><span class="badge bg-light p-2 ms-2 mt-2 text-dark">latte</span></h5>
+              </div>
+            </div>
+            <div class="hover-overlay">
+              <div class="mask" style="background-color: rgba(253, 253, 253, 0.15);"></div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-md-2 mb-2">
+        <div class="bg-image hover-zoom ripple shadow-1-strong rounded">
+          <img src="images/c1.jpg"
+            class="w-100 rounded-top" />
+          <a href="#!">
+            <div class="mask rounded-bottom" style="background-color: rgba(0, 0, 0, 0.3);">
+              <div class="d-flex justify-content-start align-items-start h-100">
+                <h5><span class="badge bg-light p-2 ms-2 mt-2 text-dark">cappuccino</span></h5>
+              </div>
+            </div>
+            <div class="hover-overlay">
+              <div class="mask" style="background-color: rgba(253, 253, 253, 0.15);"></div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-md-2 mb-2">
+        <div class="bg-image hover-zoom ripple shadow-1-strong rounded">
+          <img src="images/c1.jpg"
+            class="w-100 rounded-top" />
+          <a href="#!">
+            <div class="mask rounded-bottom" style="background-color: rgba(0, 0, 0, 0.3);">
+              <div class="d-flex justify-content-start align-items-start h-100">
+                <h5><span class="badge bg-light p-2 ms-2 mt-2 text-dark">flat white</span></h5>
+              </div>
+            </div>
+            <div class="hover-overlay">
+              <div class="mask" style="background-color: rgba(253, 253, 253, 0.15);"></div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-md-2 mb-2">
+        <div class="bg-image hover-zoom ripple shadow-1-strong rounded">
+          <img src="images/c1.jpg"
+            class="w-100 rounded-top" />
+          <a href="#!">
+            <div class="mask rounded-bottom" style="background-color: rgba(0, 0, 0, 0.3);">
+              <div class="d-flex justify-content-start align-items-start h-100">
+                <h5><span class="badge bg-light p-2 ms-2 mt-2 text-dark">mocha</span></h5>
+              </div>
+            </div>
+            <div class="hover-overlay">
+              <div class="mask" style="background-color: rgba(253, 253, 253, 0.15);"></div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-md-2 mb-2" >
+        <div class="bg-image hover-zoom ripple shadow-1-strong rounded">
+          <img src="images/c1.jpg"
+            class="w-100 rounded-top" />
+          <a href="#!">
+            <div class="mask rounded-bottom" style="background-color: rgba(0, 0, 0, 0.3);">
+              <div class="d-flex justify-content-start align-items-start h-100">
+                <h5><span class="badge bg-light p-2 ms-2 mt-2 text-dark">americano</span></h5>
+              </div>
+            </div>
+            <div class="hover-overlay">
+              <div class="mask" style="background-color: rgba(253, 253, 253, 0.15);"></div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-md-2 col-sm-2 mb-2" >
+        <div class="bg-image hover-zoom ripple shadow-1-strong rounded">
+          <img src="images/c1.jpg"
+            class="w-100 rounded-top" />
+          <a href="#!">
+            <div class="mask rounded-bottom" style="background-color: rgba(0, 0, 0, 0.3);">
+              <div class="d-flex justify-content-start align-items-start h-100">
+                <h5><span class="badge bg-light p-2 ms-2 mt-2 text-dark">long black</span></h5>
+              </div>
+            </div>
+            <div class="hover-overlay">
+              <div class="mask" style="background-color: rgba(253, 253, 253, 0.15);"></div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+      <script src="main.js"></script>
+    </body>
+</html>
